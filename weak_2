@@ -1,0 +1,65 @@
+# Day 7  Intermediate Python for Data Science
+ 
+Topics :
+1. Python functions, loops, list comprehensions
+2. Object-oriented programming (OOP) basics
+3. Introduction to key data science libraries: NumPy, Pandas, Matplotlib
+4. Overview of Jupyter notebooks for interactive coding
+
+Step 1:  In Python, a function is a block of code that performs a specific task and can be called multiple times from anywhere in a program: In Python, a for loop is a common way to iterate through a list, while list comprehension is a more efficient way to do the same. List comprehensions are more concise, readable, and require less computation power than for loops. The main difference is that a for loop requires multiple lines to create a new list by iterating over items and manually adding each one. Whereas list comprehension do the same task in a single line,
+
+Step 2:  Object-oriented programming (OOP) is a computer programming model that organizes software design around objects, or data, instead of logic and functions. 
+
+Step 3:  NumPy: is an open-source library for python that provides support for multi-dimensional arrays and mathematical functions NumPy. Pandas: - A popular library for data manipulation and analysis that offers data structures like Data Frames. Matplotlib: - A library for creating static, animated, and interactive visualizations to help understand data patterns and trends.
+
+Step 4:  Jupyter Notebook is open-source software created and maintained by the Jupyter community. A Jupyter notebook allows for the creation and sharing of documents with code and rich text elements. It works with over 40 programming languages including Python, R, and Ruby making it versatile.  Jupyter notebooks are used for a variety of purposes. A notebook is an interactive computational environment in which users can execute a particular piece of code and observe the output and make changes to the code to drive it to the desired output or explore more.
+
+Activities:
+
+1. Practice Python basics: Write exercises covering functions, loops, and list comprehensions.
+2. Explore NumPy: Manipulate arrays, perform calculations, and explore array operations.
+3. Work with Pandas and Matplotlib: Load a small dataset, explore data structure with Pandas, and plot basic graphs with Matplotlib.
+4. Resources: Documentation for NumPy, Pandas, Matplotlib, and Python coding exercises (e.g.,LeetCode, HackerRank).
+
+Step 1:   Practice Python Basics: 1:- Functions : Define a basic function to calculate the square of a number. 2:- Loops: Use a  loop to iterate over a list and print each item. 3:- List Comprehensions: Create a list of squares using list comprehension.
+
+Step 2: Explore NumPy: 1:- First, install NumPy, 2:- Array Manipulation:( Create a NumPy array and perform some calculations.) 3:- Array Operations: ( Create a array and calculate row and column sums.).
+
+Step 3: 1:-First, install Pandas and Matplotlib, 2:- Load and Explore Data with Pandas, 3:- Plot Basic Graphs with Matplotlib, 
+
+Step 4:  Python Documentation, NumPy Documentation, 
+
+
+
+
+
+# Day 8  Introduction to SQL for Data Science
+Objective: Learn SQL basics for extracting and analyzing data.
+
+Topics: 
+
+1. Database essentials: tables, rows, columns, primary keys
+2. Core SQL commands: SELECT, WHERE, JOIN, GROUP BY, ORDER BY
+3. SQL functions (e.g., COUNT, SUM, AVG)
+
+Step 1:  Tables: - Structures that store data in rows and columns. Rows: - Individual records in a table (like one entry). Columns: - Attributes or fields in a table (like a category of data). Primary Key: - A unique identifier for each row in a table.
+
+Step 2:  SELECT: Retrieves specific data from a table. WHERE: - Filters data based on conditions. JOIN: - Combines rows from two or more tables based on a related column. GROUP BY: - Groups rows with the same values in specified columns. ORDER BY: - Sorts the result by specified columns.
+
+Step 3: SQL functions help extract and analyze data from databases:  COUNT: - This function is used to count rows in a certain column or rows in the whole table.  SUM: - This function returns the sum of the values in a specified column.  AVG:- Calculates the average of values in a column.
+
+Activities:
+
+1. Set up an SQL environment: Either locally with SQLite or using an online SQL sandbox.
+2. Run basic SQL queries: Start by selecting and filtering data, then practice joins and grouping.
+3. Use SQL functions: Try out basic functions like COUNT, AVG, and SUM to summarize data.
+4. Resources: SQL documentation, SQLZoo, or SQLite tutorial for hands-on practice.
+
+Step 1: Install sql, 2:- Set Up a Connection, 3:- Create a Database, 
+
+Step 2:  Run Basic SQL Queries: - 1 ,Create a Table, 2 :- Insert Data, 3:- Select and Filter Data, 4:- Join Tables, 5:- Group Data, 
+
+Step 3:  Use functions like COUNT, AVG, and SUM to summarize data.
+
+Step 4:  SQL documentation, SQLite Tutorials
+
