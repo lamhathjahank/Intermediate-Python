@@ -63,3 +63,146 @@ Step 3:  Use functions like COUNT, AVG, and SUM to summarize data.
 
 Step 4:  SQL documentation, SQLite Tutorials
 
+
+
+# Day 9 Integrating SQL with Python (using SQLite)
+Objective: Integrate SQL and Python to analyze data more flexibly.
+
+Topics: 
+1. Connecting Python with SQLite
+2. Writing SQL queries in Python using sqlite3
+3. Converting SQL query results to Pandas Data Frames
+
+Step 1:  connecting python with SQLite: Connecting to SQLite using Python The sqlite3 module is part of Python's standard library, This allows Python to interact with the database, run SQL commands, store data, retrieve data, and manipulate tables directly from Python.
+
+Step 2:  Writing SQL queries in Python using sqlite3:-  Import the sqlite3 library:,- Connect to a Database:,- Create a Cursor Object:,- Execute SQL Queries:,- Commit Changes:,- Close the Connection (),
+
+Step 3: Converting SQL query results to Pandas Data Frames: Import Required Libraries:- Connect to the Database:- Write Your SQL Query:,- Use pandas.read_sql_query:,- Display or Work with the Data Frame:,- Close the Database Connection:, 
+
+Activities:
+
+1. Set up a simple SQLite database: Create a small dataset within an SQLite database.
+2. Write SQL queries in Python: Use the sqlite3 library to query the database from a Python script.
+3. Data manipulation: Load SQL results into Pandas, and practice filtering, transforming, and plotting   the data.
+4. Resources: Python’s sqlite3 library documentation, SQLite reference guides
+
+Step 1: Set Up a Simple SQLite Database and Create a Small Dataset: - First,  use the sqlite3 library in Python to create a new SQLite database. Then, create a table and insert some data into it.
+
+Step 2: Write SQL Queries in Python (Using the sqlite3 Library): - Next, import sqlite3 , Reconnect to the SQLite database,- Fetch all results,- Print the results,- Close the connection ().
+
+Step 3: Data Manipulation: Load SQL Results into Pandas, Filter, Transform, and Plot: - Reconnect to the SQLite database,- Load data from,- Close the connection(),- Display the Data Frame,- Filter,- Transform,- Plotting.,
+
+Step 4:  SQLite Reference Guides,  
+
+
+
+# Day 10 Introduction to Machine Learning Concepts
+Objective: Understand foundational machine learning principles and simple algorithms.
+
+Topics:
+1. Supervised vs. unsupervised learning
+2. Key algorithms: linear regression, k-nearest neighbours
+3. Data preparation and splitting (train/test)
+4. Overview of scikit-learn
+
+Step 1: Supervised learning: Uses labeled training data to teach algorithms how to recognize patterns and predict outcomes. Supervised learning is well-suited for problems with known outcomes and labeled data, such as image recognition, email spam classification, and stock price predictions. Unsupervised learning: Uses unlabelled data to discover patterns, group similar instances, or detect anomalies. Unsupervised learning is well-suited for exploratory tasks where labeled data is absent, such as organizing large data archives, building recommendation systems, and grouping customers based on their purchasing behaviours.
+
+Step 2: Linear regression is a machine learning algorithm that uses a linear equation to model the relationship between two variables and predict the value of one variable based on the other. The k-nearest neighbours: (KNN) algorithm is a non-parametric, supervised learning classifier, which uses proximity to make classifications or predictions about the grouping of an individual data point.
+
+Step 3: Data preparation is a process that involves cleaning and transforming raw data before analysing and processing it. Data splitting is the process of dividing the data into training and testing sets. Training set: Used to teach the model how to make predictions. Test set: Used to check how well the model performs on new, unseen data. 
+
+Step 4: Scikit-learn is a free, open-source Python library that provides tools for machine learning, data mining, and data analysis.
+
+Activities:
+1. Explore ML fundamentals: Review basic machine learning terms and workflow.
+2. Practice with scikit-learn: Implement a simple regression or classification model.
+3. Model evaluation: Measure model performance with accuracy, mean squared error, or other relevant metrics.
+4. Resources: scikit-learn documentation, introductory machine learning tutorials. 
+
+Step 1:  basic machine learning terms and workflow: Basic Terms:- Dataset: A collection of data used to train and test a model. Features (X): The input variables or independent variables used to predict the target (output). Target (y): The output or dependent variable that we are trying to predict. Model: An algorithm that learns from the training data to make predictions. Training: Teaching the model using the training dataset. Testing: Evaluating the model's performance on new, unseen data (test dataset). ML Workflow: 1. Load and prepare the data. 2. Split the data into training and testing sets. 3. Select a model (regression or classification). 4. Train the model using the training data. 5. Evaluate the model's performance using testing data. 
+
+Step 2:  Steps for Implementing a Simple Regression Model: Import Libraries,- Create or Load a Dataset:- Prepare Data:- Create and Train the Model:- Make Predictions:- Evaluate the Model.
+
+Step 3:  For Classification Models: 1. Accuracy: Measures the percentage of correct predictions. 2. Precision: Proportion of true positive predictions among all positive predictions. 3. Recall (Sensitivity): The proportion of true positive predictions among all actual positive cases. 4. F1-Score: The harmonic mean of precision and recall. Useful when classes are imbalanced. 5. Confusion Matrix: A matrix showing the true vs. predicted values for each class, helping to visualize model performance.  For Regression Models:- 1. Mean Squared Error (MSE): Measures the average squared difference between actual and predicted values. 2. R-squared: The proportion of the variance in the dependent variable that is predictable from the independent variables. 3. Mean Absolute Error (MAE): The average of the absolute differences between actual and predicted values.
+
+Step 4: Introductory Tutorials, Scikit-learn Documentation,
+
+
+
+# Day 11 Building Your First Machine Learning Model (Classification)
+Objective: Create a basic classification model and evaluate its performance.
+
+Topics:
+1. Workflow for building classification models
+2. Key algorithms: logistic regression, decision trees
+3. Model evaluation metrics: accuracy, precision, recall
+
+Step 1:  Workflow for Building Classification Models:1. Problem Definition: Define the problem as a classification task (e.g., spam vs. non-spam email, predicting disease presence/absence). 2. Data Collection: Collect relevant data for the classification task from various sources (databases, APIs, etc.). 3. Data Pre-processing: - Cleaning: Handle missing values, remove outliers, and deal with duplicates. Feature Engineering: Create new features or transform existing ones (e.g., encoding categorical variables, scaling numerical features).  Feature Selection: Select relevant features based on importance or correlation. 4. Splitting the Data: Split the data into training and testing sets. 5. Model Selection: Choose an appropriate classification algorithm (e.g., logistic regression, decision trees, random forest, etc.). 6. Model Training: Train the model using the training data. The model learns the patterns and relationships in the data. 7. Model Evaluation: Evaluate the model’s performance using relevant metrics (accuracy, precision, recall, confusion matrix, etc.) on the test set. 8. Hyperparameter Tuning: Fine-tune the model by adjusting hyperparameters. 9. Model Deployment. 10. Monitoring & Maintenance: Continuously monitor the model's performance and retrain it with new data if necessary.
+
+Step 2:  Logistic Regression is a popular classification algorithm used in machine learning for predicting binary outcomes (i.e., two possible classes, such as Yes or No, True or False). Despite the name, it's a classification algorithm, not a regression algorithm, as it predicts discrete class labels rather than continuous values. A Decision Tree: - is a popular and intuitive machine learning algorithm used for both classification and regression tasks. It works by recursively splitting the data into subsets based on the feature values, creating a tree-like structure of decisions and their possible outcomes. The tree makes predictions by following the path from the root (top) to a leaf (bottom), where each node represents a decision based on a feature, and each leaf node represents an outcome (class label or numeric value).
+
+Step 3: Accuracy: - is the percentage of correct predictions made by the model out of all predictions. Precision: - Precision is the proportion of correct positive predictions out of all the instances that were predicted as positive. Recall (Sensitivity or True Positive Rate): - Recall is the proportion of correct positive predictions out of all the actual positive instances.
+
+Activities:
+1. Select a classification problem: Load a simple dataset (e.g., predicting whether an email is spam).
+2. Train the model: Implement logistic regression or decision tree classifiers using scikit-learn.
+3. Evaluate and refine: Split data into training/testing sets, then evaluate accuracy and other metrics.
+4. Resources: Classification guides, scikit-learn documentation.
+
+Step 1: Select a Classification Problem: Load a Simple Dataset: -  Create a simple dataset of text messages and labels (spam or ham). - Convert the text data into numerical format using CountVectorizer, which converts each message into a vector of word counts. - Split the data into training and testing sets.
+
+Step 2:  Train the Model: Implement Logistic Regression:- Initialize a Logistic Regression model.- Train the model on the training data. - Make predictions on the test set.
+
+Step 3: Evaluate and Refine the Model:- Calculate the accuracy of the model.- Generate a classification report,- Print the confusion matrix, which shows the number of true positives, false positives, true negatives, and false negatives. 
+
+Step 4: scikit-learn documentation., Classification guides,
+
+
+
+
+# Day 12 Building Your First Machine Learning Model (Regression)
+Objective: Develop a simple regression model and evaluate its performance.
+
+Topics:
+1. Regression analysis fundamentals
+2. Linear regression with scikit-learn
+3. Evaluating performance with mean squared error (MSE)
+
+Step 1: Regression analysis is a statistical technique that uses a model to predict how changes in independent variables affect a dependent variable. The fundamentals of regression analysis include: - Model: A plausible model is specified. Data: Reliable data is obtained. Assumptions: Assumptions are made about the data and the model. For example, the data was collected using a statistically valid sample. Fitting: The model is fitted to the data. Interpretation: The output is interpreted.
+
+Step 2: Scikit-learn is a powerful Python library for machine learning, and it provides a straightforward way to implement linear regression.
+
+Step 3: The Mean Squared Error (MSE) is a common metric to evaluate the performance of a regression model. It measures the average squared difference between the actual and predicted values.
+
+Activities:
+1. Choose a regression dataset: Use a sample dataset (e.g., predicting house prices).
+2. Implement linear regression: Set up and train a linear regression model.
+3. Evaluate and visualize: Measure performance using MSE, and plot predictions and residuals.
+4. Resources: Regression tutorials, scikit-learn docs.
+
+Step 1: Choose a Regression Dataset: - 3use the Boston Housing dataset, which is a classic regression dataset available in scikit-learn. It contains information on various factors affecting house prices in Boston.
+
+Step 2: Implement Linear Regression: -  set up a simple linear regression model using scikit-learn and split the data into training and testing sets.
+
+Step 3: Evaluate and Visualize: - evaluate the model using Mean Squared Error (MSE) and visualize the predicted vs actual values and the residuals.
+
+Step 4: scikit-learn docs, Regression Tutorials,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
