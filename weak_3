@@ -1,0 +1,230 @@
+# Task report day 13  Introduction to Django
+Objective: Understand the basics of Django, its architecture, and setting up a Django project. Topics
+● What is Django, and why use it?
+● Django project architecture: settings, URLs, views, and models.
+● Setting up a Django environment.
+● Running your first Django project (Hello World).
+
+Step 1:  Django is a Python web framework that's used to develop web applications quickly and efficiently. Use of Django:-  Web development: Django can be used to build almost any type of website, including content management systems, wikis, social networks, and news sites. Data science: Django can be used for data science. Backend mobile app development: Django can be used for backend mobile app development. Automating tasks: Django can be used to automate tasks. Managing data: Django can be used to manage data.
+
+Step 2:  Settings:  Configure the project.  URLs: - This part maps web addresses (like www.example.com/home) to specific parts of app. It acts like a guide, directing users to the right place in  project.  Views:- Views are where the logic happens. They decide what to show the user when they visit a URL. For example, they might grab data from the database and pass it to a webpage. Models:- Models are like blueprints for  database. They define what kind of data app will store, like user information or blog posts.
+
+Step 3:  Setting up a Django environment: - Install Python, - Install pip ,- Create a Virtual Environment,- Install Django,- Start a Django Project,- Run the Development Server.
+
+Step 4:- Running your first Django project (Hello World):-  Set Up Django, - Create an App,-  Add the App to the Project,- Create a View for "Hello, World!",- Set Up a URL for the View,- Run the Server,- View "Hello, World!".
+
+Activities
+1. Install Django and set up a virtual environment.
+2. Create a new Django project and run the development server.
+3. Explore project files: settings.py, urls.py, views.py.
+4. Create a simple "Hello World" webpage using Django views and templates.
+Resources: Django documentation, beginner tutorials on YouTube (e.g., Corey Schafer).
+
+Step 1:  Install Django and Set Up a Virtual Environment: - Install Python,- Set Up a Virtual Environment,- Install Django.
+
+Step 2:  Create a New Django Project and Run the Server:- Create a Django Project, - Run the Development Server,.
+
+Step 3:  Explore Project Files: - settings.py: - Found in the my project folder Manages project configuration like database settings, installed apps, and middleware.  urls.py: - Defines how URLs map to views.  Located in the my project folder.  views.py: - Found in the app folder (e.g., myapp).  Contains Python functions that control what gets displayed on the webpage.
+
+Step 4:  Create a "Hello World" Webpage: - 1. Create an App, - 2. Add the App to settings.py, - 3. Create a View: - Open myapp/views.py and create a simple view, - 4. Set Up a URL:- In my project/urls.py, add the new URL, - 5. Create a Template, - 6. Run the Server.
+
+Resources: YouTube tutorials, Django documentation.
+
+
+
+# Task report day 14  Django Models and the Admin Interface
+Objective: Learn to define data models and use Django's built-in admin interface for CRUD operations.
+Topics
+● What are models in Django?
+● Setting up and using the Django database (sqlite3 default).
+● Django ORM basics: defining models, migrations, and querying data.
+● Using the Django admin panel for CRUD operations.
+
+Step 1: In Django, models are the part of application that handles data. They define what data  want to store and how it’s organized in database. Each model represents a table in the database, and the fields in the model represent the columns of that table.  Key Features of Models:- 1. Define Data Structure: Models specify the types of data. app will manage, like text, numbers, dates, or relationships between objects. 2. Automatic Table Creation: Django automatically creates the database tables based on models. 3. Work with Data Easily: use Django’s ORM (Object-Relational Mapping) to add, edit, delete, and query data without writing SQL.
+
+Step 2: Setting Up and Using the Django Database (SQLite3 Default): When create a Django project, the database file (db.sqlite3) is automatically created. configure the database in the settings.py file. This creates necessary tables for Django's built-in apps like authentication.
+
+Step 3:  Django ORM Basics:- Defining Models:- Models define database structure. For example, create a model for a blog post. Migrations:- Migrations apply model changes to the database. Querying Data:- Django ORM allows to work with data easily.
+
+Step 4:  CRUD Operations:- Create: Add new data directly in the admin panel.  Read:- View existing data.  Update:- Edit existing data.  Delete:- Remove data.
+
+Activities:
+1. Define a simple model (e.g., Blogpost with title, content, date).
+2. Run migrations to set up the database.
+3. Register the model in the admin panel and test CRUD operations.
+4. Query data using Django ORM in the Django shell.
+Resources: Django ORM documentation, beginner tutorials on Django models.
+
+Step 1: Define a Simple Model:- Create a Django App,- Define the Blogpost Model:- title: A short text field for the post title. content: A long text field for the main body of the post. content: A long text field for the main body of the post.
+
+Step 2: Run Migrations to Set Up the Database:-  Add the App to INSTALLED_APPS,- Generate Migrations:- Run the following command to generate a migration file for the Blogpost model. Apply Migrations:- Apply the migrations to set up the database table for the Blogpost model.
+
+Step 3: Register the Model in the Admin Panel:- Open blog/admin.py and register the Blogpost model,- Create a Superuser: Create a superuser account to access the admin panel. Access the Admin Panel: Start the development server.
+
+Step 4: Query Data Using Django ORM in the Django Shell:- Open the Django Shell,- Perform Basic Operations:- Create a New Blog Post,- Retrieve All Blog Posts,- Filter Blog Posts,- Update a Blog Post,- Delete a Blog Post.
+
+Resources:  beginner tutorials on Django models.
+
+
+
+# Task report day 15  Django Views and Templates
+Objective: Create dynamic web pages using Django views and templates.
+Topics
+● Function-based views vs. class-based views.
+● Passing data to templates from views.
+● Template syntax: variables, loops, and conditionals.
+
+Step 1: Function-based views: - FBVs are views written as Python functions. Each view function takes a request and returns a response. Use FBVs for simple or small views where splitting logic isn’t necessary (e.g., a basic "Hello World" page). Class-Based Views (CBVs):- They use methods (like get, post, etc.) to handle requests.  Structure: - Each HTTP method (GET, POST, etc.) has a separate method in the class, making the logic modular and reusable.
+
+Step 2: Passing data to templates from views in Django is the process of sending information from the backend (the view) to the frontend (the HTML template) so that the webpage can display dynamic content. Here’s how it works: - Create a View, - Create a Template: - Templates are HTML files that display the data passed from views using Django Template Language (DTL).- Configure URLs: - Connect the view to a URL.- Run the Server and Test.
+
+Step 3: Template syntax: - Variables: Variables are placeholders for the data passed from views. They are used to display dynamic content.  Loops: - Repeat content for each item in a list. Conditionals: - display content based on specific conditions (e.g., if something is true).
+
+Activities
+1. Create a simple app and define views to handle requests.
+2. Use templates to display dynamic data (e.g., list blog posts).
+3. Explore template inheritance for consistent layouts.
+4. Practice using template filters and tags.
+Resources: Django template documentation, tutorials on function-based views.
+
+Step 1:  Create a Simple App and Define Views: - Create a New Django App, - Add the App to INSTALLED_APP, - Define Views: - define views to handle requests. Set Up URLs: - define a URL for the view, - Include this app's URLs in the project's urls.py.
+
+Step 2:  Use Templates to Display Dynamic Data: - Create a Template: Create a templates/blog directory inside app, and add a file blog_list.html, - Run the Server and Test: Start the server.
+
+Step 3: Explore Template Inheritance: - Create a Base Template, - Extend the Base Template: Modify blog_list.html to inherit from base.html.
+
+Step 4: Practice Using Template Filters and Tags: - Template Filters: Filters modify variables in templates. Add filters to format data, - Template Tags: Tags perform logic like loops or conditionals.
+
+Resources: Tutorials on function-based views, Django template documentation.
+
+
+
+
+# Task report day 16  Django URL Routing and Forms
+Objective: Understand Django’s URL routing system and create forms for user input.
+Topics
+● Django URL patterns and routing.
+● Dynamic URLs with parameters.
+● Working with Django forms: forms.py.
+● Validating form data.
+
+Step 1: Django URL patterns and routing determine how HTTP requests are directed to specific views. A view is a function or class that processes the request and generates a response. 
+
+Step 2: Dynamic URLs include variable parts that allow to pass parameters to views. These parameters can be used to fetch specific data or customize responses.
+
+Step 3: Django provides a forms module that simplifies form creation, validation, and rendering. It allows developers to handle user input effectively.
+
+Step 4: Validating Form Data: - Form validation is the process of checking whether the data submitted by users meets specific criteria (e.g., proper format, required fields).
+
+Activities:
+1. Define URL patterns to handle dynamic content (e.g., /blog/<id>).
+2. Create a form for user input (e.g., a form to add a blog post).
+3. Handle form submissions and validation in views.
+4. Display form errors in templates.
+Resources: Django forms documentation, freeCodeCamp Django tutorials.
+
+Step 1: Define URL Patterns to Handle Dynamic Content:- Create a URL pattern in app's urls.py. to capture dynamic parts of the URL. Connect the URL to a view function that processes the dynamic content.
+
+Step 2: Create a Form for User Input:- Create a forms.py file in app if it doesn’t already exist. Define a class that inherits from forms.Form or forms.ModelForm for model-based forms. Add form fields using Django’s form field types.
+
+Step 3: Handle Form Submissions and Validation in Views:- Import the form in view. Instantiate the form with request.POST data when handling a POST request. Use form.is_valid() to validate the submitted data. Process the valid data or return errors to the template.
+
+Step 4: Display Form Errors in Templates:- Pass the form to the template context in view. Use Django's template language to show errors.
+
+Resources: Django tutorials, Django forms documentation,
+
+
+
+# Task report day 17  Django Static Files and Media
+Objective: Learn to serve static files (CSS, JS, images) and manage uploaded files.
+Topics
+● Setting up static files and using the static directory.
+● Adding CSS and JavaScript to Django templates.
+● Handling file uploads in Django.
+● Configuring media files and file fields in models.
+
+Step 1: Setting up static files and using the static directory in Django refers to managing files like CSS, JavaScript, images, and fonts that are not dynamically generated but are essential for the website's design and functionality.
+
+Step 2: Adding CSS and JavaScript to Django Templates: - To enhance the visual design and interactivity of web pages, CSS and JavaScript files are added to templates.
+
+Step 3: Handling file uploads in Django:- Handling file uploads in Django means allowing users to upload files, such as images, documents, or videos, to your website and storing those files on the server or a storage service.
+
+Step 4: Configuring media files and file fields in models:- in Django involves setting up  project to handle and store files uploaded by users, such as images, documents, or videos, and defining how to manage these files in database.
+
+Activities:
+1. Add a custom CSS file to style a webpage.
+2. Set up a media directory and allow users to upload files (e.g., blog images).
+3. Display uploaded files on templates.
+Resources: Django static files and media documentation.
+
+Step 1: Create a Static Directory, - Add Static Configuration,- Load and Use CSS in a Template,- Write Styles in the CSS File: Example (style.css).
+
+Step 2: Set Up a Media Directory and Allow Users to Upload Files:- Configure settings.py for Media Files,- Create a Model with a File Field: Define a model with an ImageField or FileField for uploads.- Run Migrations: Generate and apply migrations to add the model to the database.- Create a Form for File Upload: Example (forms.py).- Create a View to Handle File Uploads: Example (views.py). Add a Template for File Upload: Example (upload_blog.html). - Serve Media Files During Development.
+
+Step 3: Display Uploaded Files on Templates:- Fetch Data in a View:- Create a view to retrieve and display uploaded blog posts.- Display Uploaded Files in Templates:- Use the url attribute of the file field to access the uploaded file’s URL.
+
+Resources: media documentation, Django static files.
+
+
+
+# Task report day 18  Django User Authentication
+Objective: Implement user authentication and manage user accounts in Django.
+Topics
+● Django's built-in authentication system.
+● User registration, login, and logout.
+● Restricting access with decorators (e.g., @login_required).
+● User permissions and groups.
+
+Step 1: Django provides a built-in authentication system to manage user accounts securely. It includes features like: User Management: Create, update, and delete users. Authentication: Log in and log out users. Password Handling: Securely stores passwords using hashing. Sessions: Keeps users logged in across pages using session management.
+
+Step 2: User Registration Purpose: Allow new users to sign up by providing information like a username, email, and password. User Login: Authenticate existing users and start a session. it works: Django's built-in login() function verifies the username and password and creates a session for the user. User Logout: End the session for the logged-in user. it works: Django's built-in logout() function clears the session and logs out the user.
+
+Step 3: Restricting Access with Decorators:-  Purpose: Control access to certain views based on the user's login status. it works: Use the @login_required decorator on views to restrict them to logged-in users only.
+
+Step 4: User Permissions Purpose: Control what actions users can perform in the app (e.g., add, delete, or view specific data). it works: Permissions are tied to the User model. assign specific permissions to users. Groups: Manage permissions for multiple users at once by assigning them to a group. it works: Groups act as a collection of users with shared permissions. Assign permissions to the group, and all members inherit those permissions.
+
+Activities:
+1. Create user registration and login forms using Django's auth system.
+2. Add login/logout links to a template.
+3. Restrict certain views to logged-in users only.
+Resources: Django authentication documentation, tutorials on user authentication.
+
+Step 1: Set Up Django's Authentication System. -  Create a User Registration Form. - Handle User Registration in Views.- Create a Template for Registration.- Create a Login Form Using Django's Built-in View.- Create a Template for Login.
+
+Step 2: Add Login/Logout Links to a Template:- Set Up Logout View: Use Django's Logout View for logout functionality. - Add Links to Templates: Example (base.html).
+
+Step 3: Restrict Certain Views to Logged-in Users Only:- Use @login_required Decorator: Import and apply the decorator to the view  want to restrict. - Redirect Unauthenticated Users: By default, unauthenticated users are redirected to /accounts/login/. can customize this in settings.py - Template for the Restricted View: Example (dashboard.html).
+
+Resources:  tutorials on user authentication,  Django authentication documentation.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
